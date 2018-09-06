@@ -6,12 +6,17 @@ import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
 
 public class Display {
-    Scanner sc = new Scanner(System.in);        
+    Scanner sc = new Scanner(System.in);  
+    
+   
         
     public String playerInput() {        
         System.out.print("> ");
         String input = sc.next();
+        
+        System.out.println("Hej");
         return input.toLowerCase();
+        
     }
     
     public String nameInput() throws InterruptedException {
@@ -42,7 +47,6 @@ public class Display {
     public void helpInput() {
         System.out.println("\nDont worry, even the best needs help sometimes, kappa!"
                 + "\nYou are playing a text adventure game, you need nothing but a keyboard."
-                + "\nYou navigate through the game by typing what direction you want to go (north/n, south/s, east/e, west/w)"
                 + "\nIf you feel like you want to exit the game type in exit/quit");
     }
     
